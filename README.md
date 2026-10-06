@@ -7,7 +7,7 @@ Single-file SQLite preservation database for Nintendo Satellaview (BS-X). The pu
 | Item | Value |
 | --- | --- |
 | Original size | 739 source ZIPs, 324.1 MiB (No-Intro 699, RetroAchievements sets 40); 739 ROM files, 703.6 MiB uncompressed |
-| Stored size | populated database 115.9 MiB; public Catalog 10.6 MiB (no ROM data) |
+| Stored size | populated database 116.1 MiB; public Catalog 10.7 MiB (no ROM data) |
 | Ratio | 35.8% of the source ZIPs, 16.5% of the uncompressed ROM files |
 | Technology | storage v4: SHA256-deduplicated 32 KiB blocks packed in No-Intro family order into solid LZMA2 groups of up to 256 MiB (256 MiB dictionary); per-block SHA256 and per-object CRC32/MD5/SHA1/SHA256 verification; source ZIPs reproduced byte-for-byte from TorrentZip plans |
 | Export performance | Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz, idle, Python 3.14.4, all checks included. whole newest-DAT set with `export_set.py` (561 files, each checked against the DAT hashes): 61.6 MiB/s, 15 ms per file on average; single file with a cold cache (the group is decoded up to the file): ROM 2.78 s, TorrentZip 2.613 s on average |
