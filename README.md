@@ -7,8 +7,8 @@ Single-file SQLite preservation database for Nintendo Satellaview (BS-X). The pu
 | Item | Value |
 | --- | --- |
 | Original size | 739 source ZIPs, 324.1 MiB (No-Intro 699, RetroAchievements sets 40); 739 ROM files, 703.6 MiB uncompressed |
-| Stored size | populated database 115.6 MiB; public Catalog 10.4 MiB (no ROM data) |
-| Ratio | 35.7% of the source ZIPs, 16.4% of the uncompressed ROM files |
+| Stored size | populated database 115.9 MiB; public Catalog 10.6 MiB (no ROM data) |
+| Ratio | 35.8% of the source ZIPs, 16.5% of the uncompressed ROM files |
 | Technology | storage v4: SHA256-deduplicated 32 KiB blocks packed in No-Intro family order into solid LZMA2 groups of up to 256 MiB (256 MiB dictionary); per-block SHA256 and per-object CRC32/MD5/SHA1/SHA256 verification; source ZIPs reproduced byte-for-byte from TorrentZip plans |
 | Export performance | Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz, idle, Python 3.14.4, all checks included. whole newest-DAT set with `export_set.py` (561 files, each checked against the DAT hashes): 61.6 MiB/s, 15 ms per file on average; single file with a cold cache (the group is decoded up to the file): ROM 2.78 s, TorrentZip 2.613 s on average |
 
@@ -17,7 +17,7 @@ Single-file SQLite preservation database for Nintendo Satellaview (BS-X). The pu
 | File / document | Content |
 | --- | --- |
 | [RetroBoxDB.Satellaview.Catalog.sqlite](https://github.com/rshi0212/RetroBoxDB-Satellaview/releases/latest/download/RetroBoxDB.Satellaview.Catalog.sqlite) | Public Catalog (Release asset with `SHA256SUMS`) |
-| [Storage v4 guide](RetroBoxDB.Storage-v4.en.md) / [中文](RetroBoxDB.Storage-v4.zh-CN.md) | Storage evaluation, contents, RA, names and maintenance for all eight platforms |
+| [Storage v4 guide](RetroBoxDB.Storage-v4.en.md) / [中文](RetroBoxDB.Storage-v4.zh-CN.md) | Storage evaluation, contents, RA, names and maintenance for every platform |
 | [Technical design](RetroBoxDB.Storage-v4.Technical-Design.en.md) | Storage format, platform adapters, incremental updates, verification |
 | [RA list](reports/ra-satellaview-games.csv) / [summary](reports/ra-satellaview.json), [build report](reports/satellaview-build-report.json), [audit resolution](reports/audit-resolution-20261004.md) | Detailed data |
 
